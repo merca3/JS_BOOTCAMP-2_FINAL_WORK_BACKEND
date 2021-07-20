@@ -4,10 +4,16 @@ const movieSchema = mongoose.Schema({
     title: {
         type: String,
     },
+    mainImage: {
+        type: String,
+    },
     images: {
         type: Array,
     },
     description: {
+        type: String,
+    },
+    nameID: {
         type: String,
     },
 })

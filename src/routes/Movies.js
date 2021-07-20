@@ -16,8 +16,10 @@ router.get('/', async(req, res) => {
 router.post('/', async(req, res) => {
     const newMovieData = {
         title: req.body.title,
+        mainImage: req.body.mainImage,
         images: req.body.images,
         description: req.body.description,
+        nameID: req.body.nameID,
     }
     const movie = new Movie(newMovieData);
     try {
